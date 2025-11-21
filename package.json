@@ -1,0 +1,28 @@
+{
+  "name": "horus-tailwind-elementor",
+  "version": "1.0.0",
+  "description": "Tailwind CSS integration for Elementor with JIT compilation and automatic purging",
+  "scripts": {
+    "build": "tailwindcss -i ./assets/css/input.css -o ./assets/css/tailwind-generated.css --minify",
+    "watch": "tailwindcss -i ./assets/css/input.css -o ./assets/css/tailwind-generated.css --watch",
+    "dev": "tailwindcss -i ./assets/css/input.css -o ./assets/css/tailwind-generated.css",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report"
+  },
+  "keywords": [
+    "tailwind",
+    "elementor",
+    "wordpress",
+    "css"
+  ],
+  "author": "Decimo",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@savvywombat/tailwindcss-grid-areas": "^4.0.0",
+    "playwright": "^1.56.1",
+    "tailwindcss": "^3.4.0"
+  }
+}

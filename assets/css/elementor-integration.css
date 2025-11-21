@@ -1,0 +1,124 @@
+/**
+ * Horus - Elementor Integration CSS
+ * Improves Tailwind CSS compatibility with Elementor editor
+ */
+
+/* Ensure Tailwind classes work properly in Elementor */
+.elementor-widget-wrap,
+.elementor-element {
+    /* Allow Tailwind flex and grid utilities to work */
+    position: relative;
+}
+
+/* Fix Tailwind typography in Elementor */
+.elementor-widget-text-editor p,
+.elementor-widget-text-editor h1,
+.elementor-widget-text-editor h2,
+.elementor-widget-text-editor h3,
+.elementor-widget-text-editor h4,
+.elementor-widget-text-editor h5,
+.elementor-widget-text-editor h6 {
+    /* Preserve Tailwind classes on typography elements */
+    margin: inherit;
+    padding: inherit;
+}
+
+/* Tailwind reset compatibility with Elementor */
+.elementor-element * {
+    /* Ensure Tailwind's border-box is applied */
+    box-sizing: border-box;
+}
+
+/* Help with Tailwind responsive utilities in Elementor */
+@media (max-width: 767px) {
+    /* Mobile breakpoint alignment */
+    .elementor-element {
+        /* Ensure Tailwind mobile classes work */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Tablet breakpoint alignment */
+    .elementor-element {
+        /* Ensure Tailwind tablet classes work */
+    }
+}
+
+@media (min-width: 1025px) {
+    /* Desktop breakpoint alignment */
+    .elementor-element {
+        /* Ensure Tailwind desktop classes work */
+    }
+}
+
+/* Elementor editor specific fixes */
+.elementor-editor-active {
+    /* Ensure Tailwind classes are visible in editor */
+}
+
+/* Fix Tailwind utility conflicts with Elementor */
+.elementor-element.elementor-widget {
+    /* Preserve Tailwind positioning utilities */
+    position: relative;
+}
+
+/* Support for Tailwind's aspect-ratio utilities */
+.elementor-widget-container {
+    /* Allow aspect ratio utilities to work */
+    position: relative;
+}
+
+/* Tailwind color utilities compatibility */
+.elementor-element [class*="bg-"],
+.elementor-element [class*="text-"],
+.elementor-element [class*="border-"] {
+    /* Ensure Tailwind color classes override Elementor defaults */
+}
+
+/* Spacing utilities compatibility */
+.elementor-element [class*="p-"],
+.elementor-element [class*="m-"],
+.elementor-element [class*="gap-"] {
+    /* Ensure Tailwind spacing classes work */
+}
+
+/* Typography utilities compatibility */
+.elementor-element [class*="text-"],
+.elementor-element [class*="font-"],
+.elementor-element [class*="leading-"] {
+    /* Ensure Tailwind typography classes work */
+}
+
+/* Layout utilities compatibility */
+.elementor-element [class*="flex"],
+.elementor-element [class*="grid"],
+.elementor-element [class*="block"],
+.elementor-element [class*="inline"] {
+    /* Ensure Tailwind layout classes work */
+}
+
+/* Shadow utilities compatibility */
+.elementor-element [class*="shadow"] {
+    /* Ensure Tailwind shadow classes override Elementor */
+    box-shadow: inherit !important;
+}
+
+/* Border utilities compatibility */
+.elementor-element [class*="rounded"],
+.elementor-element [class*="border"] {
+    /* Ensure Tailwind border classes work */
+}
+
+/* Transform utilities compatibility */
+.elementor-element [class*="rotate-"],
+.elementor-element [class*="scale-"],
+.elementor-element [class*="translate-"] {
+    /* Ensure Tailwind transform classes work */
+}
+
+/* Transition utilities compatibility */
+.elementor-element [class*="transition"],
+.elementor-element [class*="duration-"],
+.elementor-element [class*="ease-"] {
+    /* Ensure Tailwind transition classes work */
+}

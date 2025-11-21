@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Horus - Tailwind CSS for Elementor */
+
+/* Custom base styles */
+@layer base {
+    /* Add any custom base styles here */
+}
+
+/* Custom components */
+@layer components {
+    /* Add any custom component styles here */
+    .horus-container {
+        @apply mx-auto px-4 sm:px-6 lg:px-8;
+    }
+}
+
+/* Custom utilities */
+@layer utilities {
+    /* Add any custom utility classes here */
+    .text-balance {
+        text-wrap: balance;
+    }
+}
